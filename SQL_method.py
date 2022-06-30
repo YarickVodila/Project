@@ -1,7 +1,7 @@
 import sqlite3
 
 try:
-    con = sqlite3.connect('Invent.db')
+    con = sqlite3.connect('dbAndFolder/Invent.db')
     cur = con.cursor()
     print('БД успешно создана')
 except Exception as ex:

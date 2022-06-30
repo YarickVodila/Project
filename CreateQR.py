@@ -25,7 +25,7 @@ def createQrCode(InvNumber):
 def createImageWithName(ItemName):
   img = createNewImage(350,150)
   drawImage = ImageDraw.Draw(img)
-  font = ImageFont.truetype("ArialMT.ttf", 20)
+  font = ImageFont.truetype("dbAndFolder/ArialMT.ttf", 20)
   lines = wrapString(ItemName,30)
   drawImage = insertLinesIntoImage(lines,drawImage)
   img.save('img/Name.png')
